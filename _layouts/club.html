@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+    <div id="fb-root"></div>
+
+    <div id="kidsnetwork-main">
+      <section class="ftco-section ftco-no-pt ftco-no-pb">
+        <div class="container px-md-0">
+          <div class="row d-flex no-gutters">
+            <div class="col-lg-12 pb-5 single">
+              <div class="row">
+                <div class="img img-single w-100" style="background-image: url({{site.url}}/images/club-banner.jpg);"></div>
+                <div class="px-5 mt-4">
+                  <h1 class="mb-3">{{page.title}}</h1>
+                  {{content}}
+                  <div class="tag-widget post-tag-container mb-5 mt-5">
+                    <div class="tagcloud">
+                      {% for tag in site.tags %}
+                      <a href="#{{ tag[0] }}" class="tag-cloud-link">{{ tag[0] }}</a>
+                      {% endfor %}
+                    </div>
+                  </div>
+
+                  <div class="about-author d-flex p-4">
+                    <div class="bio mr-5">
+                      <img src="{{site.url}}/{{page.author_img}}" alt="{{page.author}}" class="img-fluid mb-4">
+                    </div>
+                    <div class="desc">
+                      <h3>{{page.author}}</h3>
+                      <p>{{page.author_description}}</p>
+                    </div>
+                  </div>
+
+                    <div class="comment-form-wrap col-md-12 pt-5">
+                      <h3 class="mb-5">Commentaires :</h3>
+                      <script>
+                      document.write('<div class="fb-comments" data-href="'+ document.location.href +'" data-numposts="5" data-width="100%"></div>')
+                      </script>
+                  </div>
+                </div>
+              </div><!-- END-->
+            </div>
+          </div>
+        </div>
+      </section>
+    </div><!-- END kidsnetwork-MAIN -->
+
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v8.0" nonce="W3HLOrsG"></script>
+
+    {% include script.html %}
+  </body>
+</html>

@@ -1,0 +1,37 @@
+---
+layout: default
+title: Les Clubs
+permalink: /book-clubs/
+---
+
+			<div id="kidsnetwork-main">
+				<section class="ftco-section ftco-no-pt ftco-no-pb">
+					<div class="container px-md-0">
+						<div class="row d-flex no-gutters">
+							{% for post in site.posts %}
+							<div class="col-md-4 portfolio-wrap-2">
+								<div class="row no-gutters align-items-center">
+									<div href="#" class="img w-100 js-fullheight d-flex align-items-center" style="background-image: url({{site.url}}/{{post.img}});">
+										<div class="text p-4 p-md-5 ftco-animate">
+											<div class="desc">
+												<div class="top">
+													<span class="subheading">{{post.categories}}</span>
+													<h2 class="mb-4"><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h2>
+													<p><a href="{{site.baseurl}}{{post.url}}" class="custom-btn">En savoir plus</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							{% endfor %}
+						</div>
+						<div class="row d-flex">
+							<div class="col-md-12">
+								<a href="https://github.com/lyc-sand" target="_blank" class="btn-custom-load d-block w-100 text-center py-4" style="color: #000000;">Par le club d'informatique au Lycée Georges Sand</a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div><!-- END kidsnetwork-MAIN -->
+		</div><!-- END kidsnetwork-PAGE -->

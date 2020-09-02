@@ -1,0 +1,30 @@
+<div id="kidsnetwork-page">
+  <a href="#" class="js-kidsnetwork-nav-toggle kidsnetwork-nav-toggle"><i></i></a>
+  <aside id="kidsnetwork-aside" role="complementary" class="js-fullheight" style="background-color: #000;">
+
+    <h1 id="kidsnetwork-logo" class="mb-4 mb-md-5"><a href="{{site.url}}" style="background-color: #fff;">Book Clubs</a></h1>
+    <nav id="kidsnetwork-main-menu" role="navigation">
+      <ul>
+        <li class="{% if page.url == '/' %}kidsnetwork-active{% endif %}"><a href="{{site.url}}">Accueil</a></li>
+        <li class="{% if page.url == '/book-clubs/' %}kidsnetwork-active{% endif %}"><a href="{{site.url}}/book-clubs/">Les Clubs</a></li>
+        <li><a href="https://www.lyc-sand-domont.fr/" target="_blank">Site Officiel</a></li>
+        <li class="{% if page.url == '/about/' %}kidsnetwork-active{% endif %}"><a href="{{site.url}}/about/">À Propos</a></li>
+        <li class="{% if page.url == '/contact/' %}kidsnetwork-active{% endif %}"><a href="{{site.url}}/contact">Nous Contacter</a></li>
+      </ul>
+    </nav>
+
+    <div class="kidsnetwork-footer">
+      <div class="mb-4">
+        <h3>Abonnez-vous à le newsletter</h3>
+        <form action="#" class="kidsnetwork-subscribe-form">
+          <div class="form-group d-flex">
+            <div class="icon"><span class="icon-paper-plane"></span></div>
+            <input type="text" class="form-control" placeholder="Adresse E-mail">
+          </div>
+        </form>
+      </div>
+      <p class="pfooter">
+        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Par le <a href="https://github.com/lyc-sand/" target="_blank">Club d'informatique</a>
+      </p>
+      </div>
+    </aside> <!-- END kidsnetwork-ASIDE -->
