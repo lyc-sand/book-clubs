@@ -13,7 +13,7 @@ function randomEmoji() {
 }
 
 //Définir les prénoms de la team
-const teamprenom = ['Charlotte ORTET', 'Gary KA' ,'Keany Vy KHUN'];
+const teamprenom = ['Charlotte ORTET', 'Keany Vy KHUN'];
 function randomTeam() {
   let random = Math.floor(Math.random() * teamprenom.length);
   return teamprenom[random];
@@ -24,7 +24,7 @@ const welcome = [
 	'color: gray',
   'font-size: 15px'
   ].join(';');
-console.log('%cBienvenue sur KidsNetwork Blog !', welcome, randomEmoji());
+console.log('%cBienvenue sur Book Clubs !', welcome, randomEmoji());
 
 //Team prénoms
 const team = [
